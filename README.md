@@ -1,6 +1,6 @@
-## HR Analytics Dashboard 
+# HR Analytics Dashboard 
 
-### General info
+## General info
 
 The project contains the analysis of employee attrition data and create an interactive dashboard using Power BI. 
 
