@@ -6,7 +6,7 @@ The project contains the analysis of employee attrition data and create an inter
 The aim of the project is analysis of employees attrition data in example company to find out reasons which are most responsible for attrition. The dashboard is designed to help the HR team to interpreting data and analyzing the key factors to reduce the attrition rate. 
 
 ### Dataset
-The dataset comes from Kaggle (HR Employee Attrition) and can be find [here](https://www.kaggle.com/datasets/itssuru/hr-employee-attrition). 
+The dataset contains the details of the employee attrition (HR Employee Attrition) such as department, age, education field, job role, years at company etc. It comes from Kaggle and can be find [here](https://www.kaggle.com/datasets/itssuru/hr-employee-attrition). 
 
 ### Project includes:
 - HR dashboard with Power BI - **HR_analytics.pbix**
