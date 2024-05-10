@@ -1,14 +1,16 @@
 import pandas as pd
 
-URL = r'C:\Python Scripts\Datasets\HR_employee\HR-Employee-Attrition.csv'
+URL = r'data\HR-Employee-Attrition.csv'
 
 
 def read_data(path):
+    '''Read the data from CSV file'''
     df = pd.read_csv(path)
     return df
 
 
 def age_ranges(row):
+    """Creating age ranges"""
     if row <= 25:
         return '18-25'
     elif (row >= 26) and (row <= 35):
@@ -22,6 +24,7 @@ def age_ranges(row):
 
 
 def salary(row):
+    """Creating salary ranges"""
     if row <= 5000:
         return 'up to 5k'
     elif (row > 5000) and (row <= 10000):
@@ -33,6 +36,7 @@ def salary(row):
 
 
 def prepare_data(df):
+    '''Clean and preprocess data'''
     # Convert Attrition variable into numeric:
     df['Attrition_num'] = df['Attrition'].map({'No' : 0, 'Yes' : 1})
     # Create Age ranges:
@@ -43,6 +47,7 @@ def prepare_data(df):
 
 
 def get_summary(data):
+    '''Generate a summary of the dataset'''
     df = prepare_data(data)
     print(df.head())
     print(f'Shape of data:', df.shape)
@@ -51,6 +56,7 @@ def get_summary(data):
 
 if __name__ == '__main__':
     df = read_data(URL)
-    get_summary(df)
-    #df.to_csv('data\HR_employee.csv')
+    data = get_summary(df)
+    # Save data to a CSV file
+    data.to_csv('data\HR_employee.csv')
     
