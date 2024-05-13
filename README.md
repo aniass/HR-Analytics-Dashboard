@@ -11,6 +11,7 @@ The dataset contains the details of the employee attrition (HR Employee Attritio
 ## Project includes:
 - HR dashboard with Power BI - **HR_analytics.pbix**
 - view the dashboard - HR_dashboard.jpg, HR_dashboard.pdf.
+- python script to clean data - **clean_data.py**
 
 ## Visualizations:
 The dashboard includes the following visualizations:
