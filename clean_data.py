@@ -10,7 +10,7 @@ def read_data(path):
 
 
 def age_ranges(row):
-    """Creating age ranges"""
+    '''Creating age ranges'''
     if row <= 25:
         return '18-25'
     elif (row >= 26) and (row <= 35):
@@ -23,8 +23,8 @@ def age_ranges(row):
         return '55+'
 
 
-def salary(row):
-    """Creating salary ranges"""
+def salary_ranges(row):
+    '''Creating salary ranges'''
     if row <= 5000:
         return 'up to 5k'
     elif (row > 5000) and (row <= 10000):
@@ -42,7 +42,7 @@ def prepare_data(df):
     # Create Age ranges:
     df['Age_num'] = df['Age'].apply(age_ranges)
     # Create Salary ranges:
-    df['Salary'] = df['MonthlyIncome'].apply(salary)
+    df['Salary'] = df['MonthlyIncome'].apply(salary_ranges)
     return df
 
 
