@@ -1,7 +1,7 @@
 # HR Analytics Dashboard 
 
 ## General info
-The project contains the analysis of employee attrition data and create an interactive dashboard using Power BI.
+The project contains the analysis of employee attrition data and create an interactive dashboard using Power BI. The data for the project was prepared and cleaning using python.
 
 The aim of the project is analysis of employees attrition data in example company to find out reasons which are most responsible for attrition. The dashboard is designed to help the HR team to interpreting data and analyzing the key factors to reduce the attrition rate. 
 
@@ -11,6 +11,7 @@ The dataset contains the details of the employee attrition (HR Employee Attritio
 ## Project includes:
 - HR dashboard with Power BI - **HR_analytics.pbix**
 - view the dashboard - HR_dashboard.jpg, HR_dashboard.pdf.
+- python script to clean data - **clean_data.py**
 
 ## Visualizations:
 The dashboard includes the following visualizations:
@@ -33,7 +34,8 @@ The dashboard includes the following visualizations:
 
 ## Technologies
 The project is created with:
-- Power BI.
+- Power BI,
+- Python.
 
 **Running the project:**
 
