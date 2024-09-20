@@ -46,17 +46,12 @@ def prepare_data(df):
     return df
 
 
-def get_summary(data):
-    '''Generate a summary of the dataset'''
-    df = prepare_data(data)
-    print(df.head())
-    print(f'Shape of data:', df.shape)
-    print(df.info())
-
-
 if __name__ == '__main__':
     df = read_data(URL)
-    data = get_summary(df)
+    data = prepare_data(df)
+    print(f'Shape of data:', data.shape)
+    print(data.info())
+    print(data.head())
     # Save data to a CSV file
     data.to_csv('data\HR_employee.csv')
     
